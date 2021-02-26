@@ -1,0 +1,178 @@
+/* .container-3{
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.container-3 input#search{
+    width: 300px;
+    height: 50px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #262626;
+    padding-left: 45px;
+    border-radius: 5px;
+    color: #fff;
+  }
+  .container-3 input#search{
+    width: 300px;
+    height: 50px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #262626;
+    padding-left: 45px;
+    border-radius: 5px;
+    color: #fff;
+  }
+
+  
+ .container-3 input#search::input-placeholder{ 
+    color: #65737e;  
+ }
+ .container-3 .icon{
+    position: absolute;
+    top: 50%;
+    margin-left: 17px;
+    margin-top: 17px;
+    z-index: 1;
+    color: #4f5b66;
+   transition: all .55s ease;
+  }
+
+  .container-3 input#search:focus,
+  
+  .container-3 input#search:active{
+    outline:none; 
+}
+ 
+.container-3:hover .icon{
+  margin-top: 16px;
+  color: #93a2ad;
+  transform:scale(1.5);
+  }
+
+  .container-4{
+    overflow: hidden;
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .container-4 input#search{
+    width: 300px;
+    height: 50px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #fff;
+    padding-left: 15px;
+    border-radius: 5px;
+  }
+  .container-4 input#search::input-placeholder {
+    color: #65737e;
+ }
+ .container-4 button.icon{
+    
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    background: #232833;
+    height: 50px;
+    width: 50px;
+    color: #4f5b66;
+    opacity: 0;
+    font-size: 10pt;
+    transition: all .55s ease;
+  }
+
+  .container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
+    outline: none;
+    opacity: 1;
+    margin-left: -50px;
+  }
+ 
+  .container-4:hover button.icon:hover{
+    background: white;
+  }
+  */
+   * {
+      margin:0;
+      padding:0;
+     }
+  
+  body {
+    background: url("../img/fondopiedra.jpg");
+    font-family: 'Bad Script', cursive;
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .field {
+    display:flex;
+    position:realtive;
+    margin:5em auto;
+    width:70%;
+    flex-direction:row;
+    box-shadow:
+     1px 1px 0 rgb(110, 110, 110),
+     2px 2px 0 rgb(134, 134, 134),
+     3px 3px 0 rgb(110, 110, 110),
+     4px 4px 0 rgb(110, 110, 110),
+     5px 5px 0 rgb(134, 134, 134),
+     6px 6px 0 rgb(134, 134, 134),
+     7px 7px 0 rgb(134, 134, 134)
+    ;
+  }
+  
+  .field>input[type=text],
+  .field>button {
+    display:block;
+    font:1.2em 'Bad Script', cursive;
+
+  }
+  
+  .field>input[type=text] {
+    flex:1;
+    padding:0.6em;
+    border:0.2em solid rgb(134, 134, 134);
+  }
+  
+  .field>button {
+    padding:0.6em 0.8em;
+    background-color:rgb(134, 134, 134);
+    color:white;
+    border:none;
+  }
+
+  .title{
+      text-align: center;
+      font-family: 'Bad Script', cursive;
+      font-size:30px;
+
+  }
+
+  .pokemonList{
+      display:flex;
+      grid-template-columns: 1fr 100px 1fr;
+      max-width: 800px;
+      margin:auto;
+  }
+  .pokemon{
+      border:1px solid rgb(202, 200, 200);
+      padding: 10px;
+      background: rgb(202, 200, 200);
+      text-align: center;
+  }
+  .vs{
+      text-align: center;
+      margin:auto;
+      font-size:32px;
+  }
+  .img{
+      width: 100%;
+  }
