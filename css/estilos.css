@@ -158,7 +158,10 @@
 
   .pokemonList{
       display:flex;
-      grid-template-columns: 1fr 100px 1fr;
+      flex-direction: column;
+      flex-flow: row wrap;
+      border:5px soild rgb(83, 83, 83);
+      /* grid-template-columns: 1fr 100px 1fr; */
       max-width: 800px;
       margin:auto;
   }
@@ -175,4 +178,31 @@
   }
   .img{
       width: 100%;
+  }
+
+  .resultados{
+    display: flex;
+    flex-flow: row nowrap;
+    border:1px soild grey;
+    font-size: 20px;
+    font-weight:  bolder;
+    font: rgb(59, 59, 59);
+    /* border-radius: 5px;
+    border:2px solid rgb(59, 59, 59); */
+    
+  }
+  .habilidades{
+    display: flex;
+    
+    border:1px soild grey;
+    font-size: 20px;
+    flex-wrap: wrap;
+    font: rgb(107, 101, 101);
+
+  }
+  @media (min-width: 600px) {
+    .resultados {
+      width: 47%;
+      
+    }
   }
