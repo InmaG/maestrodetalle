@@ -79,11 +79,12 @@ function recogerSeleccion (pokemonName){
 
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
     .then(response=>response.json())
-    .then(data => pintarSeleccion(data.abilities))
+    .then(data => pintarSeleccion(data.abilities, data.sprites))
+    
 
 }
 
-function pintarSeleccion (pokemonSeleccionado, ){
+function pintarSeleccion (pokemonSeleccionado, pokemonImagenes){
     pokemonSeleccionado.map(habilidades=>{
         let pokemonDiv = document.createElement('div');
         pokemonDiv.classList.add("habilidades");
@@ -91,20 +92,22 @@ function pintarSeleccion (pokemonSeleccionado, ){
         let pokemonHabilidades = document.createTextNode(`habilidad ${habilidades.ability.name}`);
         console.log(habilidades.ability)
         pokemonDiv.appendChild(pokemonHabilidades);
-        listaPokemon.appendChild(pokemonDiv);
-               
-        
-           })
-    // pokemonImagenes.map(image =>{
-        let pokemonImg = document.createElement("img");
-        pokemonImg.setAttribute("src", data.sprites.front_default);
+        listaPokemon.appendChild(pokemonDiv);                      
+         })
+         
+    pokemonImagenes.map(image =>{
+        let pokemonDivimg = document.createElement('div');
+        let pokemonImg = document.createElement('img');
+        // pokemonImg.setAttribute("src", image.sprites.front_shine);
+        pokemonImg.setAttribute("src");
         pokemonImg.classList.add("image");
 
         let pokemonImagenes = document.createTextNode(`image ${image.sprites.front_shine}`);
-        console.log(image.ability)
+        console.log(image.sprites)
+        pokemonDivimg.appendChild(pokemonImg)
         listaPokemon.appendChild(pokemonDiv);
 
-    // })
+    })
    
     
  console.log(pokemonSeleccionado);

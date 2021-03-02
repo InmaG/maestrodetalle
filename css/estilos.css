@@ -176,7 +176,7 @@
       margin:auto;
       font-size:32px;
   }
-  .img{
+  .image{
       width: 100%;
   }
 
@@ -200,6 +200,7 @@
     font: rgb(107, 101, 101);
 
   }
+
   @media (min-width: 600px) {
     .resultados {
       width: 47%;
